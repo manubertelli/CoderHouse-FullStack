@@ -1,2 +1,3 @@
 #README
-En esta carpeta están los TPS y lo que hicimos en clase.fxy
+En esta carpeta están los TPS y lo que hicimos en clase.
+Genial!!
