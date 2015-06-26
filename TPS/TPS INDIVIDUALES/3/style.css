@@ -1,0 +1,59 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+aside{
+	background-color: #084B8A;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	width: 160px;
+	z-index: 9999;
+}
+
+.titulo {
+	width: 100px;
+	margin: 10px auto;
+}
+
+h1 {
+	margin: 40px auto;
+	color: #ffffff;
+	font-size: 2em;
+}
+
+nav {
+	background-color: #d8d8d8;
+	width: 140px;
+	height: 300px;
+	margin: 50% auto;
+}
+
+.chat ul{
+	margin: 5px;
+	list-style: none;
+	padding: 10px;
+}
+
+#content {
+	margin-left: 160px;
+}
+
+#content section{
+	display: inline-block;
+	border: 1px solid #01DFD7;
+	margin: 0px;
+	padding: 10px;
+	min-width: 30%;
+}
+
+.flexbox-ex > .centrar { 
+	position: absolute;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100%;
+}
