@@ -1,0 +1,34 @@
+*{
+	box-sizing: border-box;
+}
+
+#content{
+	/*border: 2px solid green;*/
+}
+
+nav{
+	border: 2px solid green;
+	float: left;
+	width: 140px;
+}
+
+section{
+	border: 2px solid green;
+}
+.contentDerecha{
+	/*float: left;*/
+	margin-left: 140px;
+
+}
+.clearfix{
+	overflow: auto;
+	zoom: 1;
+}
+
+/*.flexbox-ex { 
+	display: -webkit-flex;
+	display: flex;
+	-webkit-aling-items: center;
+	aling-items: center;
+	height: 100%;
+}*/

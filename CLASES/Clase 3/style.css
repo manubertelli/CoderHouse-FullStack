@@ -1,0 +1,88 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 60px 0 0;
+}
+#content{
+	border: 2px solid black;
+	padding: 5px;
+	width: 50px;
+}
+
+.position-relative-ex {
+	position: relative;
+	top: 10px;
+}
+
+.position-absolute-ex {
+	background-color: red;
+	height: 40px;
+	position: relative;
+	width: 40px;
+}
+
+.position-absolute-ex > div {/*hijo inmediato*/
+	background-color: green;
+	height: 40px;
+	position: absolute;
+	/*left: 10px;*/
+	width: 40px;
+}
+
+.position-fixed {
+	height: 60px; 
+	position: fixed;
+	top: 0;
+}
+
+.float-ex {
+	/*height: 80px;*/
+}
+
+.float-left {
+	background-color: red;
+	float: left;
+	height: 40px;
+	width: 30px;
+}
+
+.float-right {
+	background-color: green;
+	float: right;
+	height: 40px;
+	width: 30px;
+}
+
+.br{
+	clear: both;
+}
+
+.clearfix{
+	overflow: auto;
+	zoom: 1;
+}
+
+.display-inline-ex li{
+	display: inline-block;
+}
+
+.flexbox-ex {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-aling-items: center;
+	align-items: center;
+	height: 100px;
+	border: 1px solid black;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+}
+
+.flexbox-ex div {
+	background-color: red;
+	height: 40px;
+	width: 40px;
+
+}

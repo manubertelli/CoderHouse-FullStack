@@ -1,0 +1,45 @@
+*{
+	box-sizing: border-box;
+}
+
+#content{
+	position: relative;
+	border: 2px solid green;
+	height: 100%;
+}
+
+nav{
+	border: 2px solid green;
+	width: 140px;
+}
+
+section{
+	border: 2px solid green;
+	margin-left: 140px;
+}
+
+.flexbox-ex > .centrar { 
+	position: absolute;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100%;
+}
+
+@media (max-width: 800px){
+	section{
+	position: static;
+	border: 2px solid green;
+	height: 100%;
+	margin-left: 0;
+	}
+	.flexbox-ex > .centrar { 
+	position: static;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 100%;
+}
+}
