@@ -349,6 +349,21 @@ Resto
 		alert("no existee!!");
 	}
 	va a devolver undefined
+**SWITCH**
+
+	var color = "rojo";
+	switch(color) {
+ 	case "rojo":
+    console.log("El hexa de rojo es: #ff0000");
+    break;
+ 	case "verde":
+    console.log("El hexa de verde es: #01df01");
+    break;
+ 	default:
+    console.log("No tengo ni la mas palida idea del hexa de: " + color);
+    break;
+podría haccerse con if.
+
 **OPERADOR TERNARIO**
 
 	var numero = Number(prompt ("ingresa un número"));
@@ -358,6 +373,7 @@ Resto
 
 	while (expr) stmt;
 	mientras while sea true se ejecuta stmt.
+cualquier (expr) que se evalue a `true` se llama trutee, sino es falsee.
 .
 
 	var i=0;
@@ -383,9 +399,82 @@ Resto
 	<- 3
 	>  i;
 	<- 4
+**Cuidado con el bucle infinito!!**
+
+    var i = 0;
+    while (i<10){
+    console.log(i);
+    i++;  (en este punto nos aseguramos de que en algún momento se detenga)
+	}
+**Cuidado con el bucle infinito!!**
+
+    var i = 0;
+    do{
+    console.log(i);
+    i++;
+	}
+	 while (i<10)
+
+**for**
+
+	for([ini_stmt]; [cond_expre]; [post_expr]) stmt;  (todas sus partes son opcionales)
+
+	ej:
+	var = i;
+	for(i = 0; i < 10; i++) console.log(i);
+	o
+	for(i = 0; i < 10; i++) {console.log(i); console.log(i*2)}
+	que es igual a:
+	for(i = 0; i < 10; i++) {
+	console.log(i);
+	console.log(i*2);
+	}
+esta bueno utilizarlo cuando esta asociado a algo que debe ser incrementado o decrementado. Hay que tratar de dejarlo lo más simple posible, si tiene más de una opción es recomendable utilizar un `while`
+	
+	for(i = 0; i < 10; i++) {
+		if (i*2 === 10){
+			break;
+	}
+de esta manera se sale abruptamente del `for` o de `while` o `do while` no es recomendable utilizarlo en estas opciones ya que se puede declarar dentro de estos donde cortar.
+
+	while(i = 0; i < 10; i++) {
+		if (i*2 === 10){
+			continue;
+		}
+		console.log(i);
+		i++;
+	}
+esto genera un loop infinito, *CUIDADOOOO!!*
 
 
-**tipos de datos inimutables**
+**Funcionalidades**
+	
+	>  var myVar="este es mi string";
+	>  myVar.indexOf("st")
+	<- 1
+
+
+	>  var myVar="este es mi string";
+	>  myVar.lastIndexOf("st")
+	<- 11
+
+	>  myVar.toUperCase() te pasa todo a MAYUSCULA
+
+	>  myVar.toLowerCase() te pasa todo a MAYUSCULA
+
+	>  myVar.substring(11, 17) desde, hasta y si el 2° es menor invierte el orden.
+	<- "string"
+
+	>  myVar.substr(desde [, cuanto]) desde donde y cuantos caracteres.
+	<- "string"	
+
+	>  myVar.substr(-3, 2) 
+	<- "in"
+
+
+	
+
+**Tipos de datos inimutables**
 
 	string
 	>  "uno"+"dos"+"ters"+"cuatro"
@@ -405,3 +494,65 @@ Un `string` es una secuencia *ordenada* de caracteres por lo que si quero quedar
 	<- "abc"
 	en lugar de "a-b" porque no se puede cambiar el valor de un caracter
 
+**ARRAY**
+
+	>  Array("test","pepe")
+	<- ['test','pepe']
+	
+	>  Array("test")
+	<- ['test']
+
+	>  Array(2)
+	>- [ , ]
+	
+	>  Array("test","pepe")
+	<- ['test','pepe']	
+
+	>  var arr = ("test","pepe")
+	<- ['test','pepe']
+
+	>  var arr = (2)
+	<- [2]
+	>  arr.length
+	<- [1]
+
+	>  var arr = ("pepe")
+	<- ['pepe']
+	>  arr.length
+	<- [4]
+
+	>  arr.push("elem3")
+
+van de 0 a 2 a la 32 ()
+
+Puede modificarse el contenido:
+
+	>  var arr = ['elem1','elem2','elem3']
+	>  arr.push("nuevoElem") agrega un nuevo elemento
+
+	>  arr[1]="elem2modif" modifica el valor de arr[1]
+	>  arr
+	<- ['elem1','elem2modif','elem3']
+
+	>  arr.pop() saca el último elemento
+	<- ['elem1','elem2']
+
+	>  arr.shift() saca el primer elemento
+	<- ['elem2']
+
+	>  arr.unshift() crea un elemento en el primer lugar
+	<- ['elem2','elem2']
+
+
+	>  arr.indexOf("elem1")
+	<- 0
+pueden sumarse estos elmentos:
+
+	>  arr.push(10)
+	>  arr.push(true)
+	>  arr.push(null)
+	>  arr.push(undefined)
+
+te devuelve false si el 1ero esta vacio:
+	>  1 in arr
+	<- true
