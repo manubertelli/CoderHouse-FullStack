@@ -84,10 +84,10 @@ function obtenerResultados(funcion, arr){
 }
 
 
-console.log(obtenerResultados( multiplicar, 1, 2, 3, 4, 2)); // recibe una función y los operando de la misma
-console.log(obtenerResultados( dividir, 72, 24, 6, 3, 3, 3)); // recibe una función y los operando de la misma
-console.log(obtenerResultados( sumar, 1, 2, 3, 4, 5)); // recibe una función y los operando de la misma
-console.log(obtenerResultados( restar, 5, 4, 3, 2, 1)); // recibe una función y los operando de la misma
+// console.log(obtenerResultados( multiplicar, 1, 2, 3, 4, 2)); // recibe una función y los operando de la misma
+// console.log(obtenerResultados( dividir, 72, 24, 6, 3, 3, 3)); // recibe una función y los operando de la misma
+// console.log(obtenerResultados( sumar, 1, 2, 3, 4, 5)); // recibe una función y los operando de la misma
+// console.log(obtenerResultados( restar, 5, 4, 3, 2, 1)); // recibe una función y los operando de la misma
 
 // var myArr=[3,4,6,5];
 // var arrEnPares = [];
